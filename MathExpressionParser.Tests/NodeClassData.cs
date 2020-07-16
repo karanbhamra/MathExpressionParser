@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MathExpressionParser
+namespace MathExpressionParser.Tests
 {
     public class NodeClassData : IEnumerable<object[]>
     {
