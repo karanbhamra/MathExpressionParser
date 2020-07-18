@@ -8,7 +8,11 @@ namespace MathExpressionParser
     {
         static void Main(string[] args)
         {
+            var expression = "12 ^ 10";
+
            
+
+            Console.WriteLine(Parser.Parse(expression).Eval());
         }
     }
 }

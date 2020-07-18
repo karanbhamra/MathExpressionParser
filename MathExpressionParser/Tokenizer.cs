@@ -62,6 +62,10 @@ namespace MathExpressionParser
                     NextChar();
                     CurrentToken = Token.Divide;
                     return CurrentToken;
+                case '^':
+                    NextChar();
+                    CurrentToken = Token.Pow;
+                    return CurrentToken;
             }
 
             // if a number

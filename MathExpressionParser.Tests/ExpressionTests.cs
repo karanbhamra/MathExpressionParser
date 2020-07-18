@@ -47,6 +47,20 @@ namespace MathExpressionParser.Tests
 
         }
 
+        [Theory]
+        [InlineData(0)]
+        [InlineData(0.0)]
+        [InlineData(1.0)]
+        [InlineData(1.6)]
+        [InlineData(100.6)]
+        public void TokenizeDoubleNumbers(double val)
+        {
+            var t = new Tokenizer(new StringReader(val.ToString()));
+
+            Assert.Equal(Token.Number, t.CurrentToken);
+            Assert.Equal(val, t.Number);
+        }
+
         [Fact]
         public void TokenizerTests()
         {

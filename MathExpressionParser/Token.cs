@@ -11,6 +11,7 @@ namespace MathExpressionParser
         Add,
         Subtract,
         Multiply,
-        Divide
+        Divide,
+        Pow
     }
 }
